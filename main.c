@@ -68,8 +68,6 @@ void main(void) {
 	DDR1AD = 0xBF;        // Set upper 4 bits to outputs (D6, D4, A5, A4 on Esduino) and lower 4 bits to inputs (A3-A0 on Esduino)
   DDRT = 0xFF; 
   DDRM = 0x00;
-	
- 
 
 // Setup LED and SCI
 //ATDDIEN = 0x000F;
@@ -115,8 +113,6 @@ void main(void) {
     }  else { 
     if(val>=1710&&val<2000){
     val = 61*(2000-val)/375;
-      
-    
     }
    
     else if(val <= 1710 && val > 1660){
